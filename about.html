@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page in ProfElect1</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(mayon.jpg);
+    background-size: cover;
+}
+header {
+   background-image: url(mayon.jpg);
+   padding: 10px;
+   text-align: center;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img{
+    height: calc(150);
+    width: 300px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #15645c ;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: #eccce1;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.about-text p{
+color: #ecd9e8;
+letter-spacing: 1px;
+line-height: 28px;
+font-size: 18px;
+margin-bottom: 45px;
+}
+button{
+    background: #e99ccb;
+    color: #bd5151;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #176B87;
+    cursor: pointer;
+}
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #DAFFFB;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav {
+    color: #DAFFFB;
+    padding: 0;
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DAFFFB;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: #f70bb0;
+    border: 1px solid #DAFFFB;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f70bb0;
+    min-width: 69px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.news {
+    float: right;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>D' Uragon's Corner</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile &#x25BE;</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+   <section class="about">
+    <div class="main">
+<img src="avatar1.jpg">
+<div class="about-text">
+    <h1>Me, Myself and I</h1>
+    <h5>Student/Mother/Wife/"Trying Hard Web Developer"</h5>
+    <p>I am Rowena Garais, 32 years old, a mother of two and currently studying at Ilocos Sur Polytechnic 
+        State College, Santa Maria Campus. I am taking up Bachelor of Information Technology major in Web 
+        Development. As an IT student, I can say I have almost experienced the hardship of being an 
+        "IT STUDENT". They say "ang IT ay pindot-pindot lang" but based on my own experienced "IT" is not 
+        just "pindot-pindot lang pala". IT course is just like an "ENGINEERING" that involves planning
+        of designs you want to your web page that you must have enough knowledge in coding and how to 
+        organize them. Sleepless nights will be spent and you will be suffering of giving up..That you 
+        might think that you cannot survive...Little mistakes that made your code error and you don't 
+        have any idea how to debug it then you have realize that a symbol semicolon(;) is the one you have
+        forgotten to input.</p>
+<button type="button">Know me More</button>
+    </div>
+    </div>
+   </section>
+
+    </div>
+
+    <footer>
+        <p>All rights reserved @2023</p>
+    </footer>
+</body>
+
+</html>

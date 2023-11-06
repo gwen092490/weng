@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D' Uragon's Corner - News</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(mayon.jpg);
+    background-size: cover;
+}
+
+header {
+    background-image: url(mayon.jpg);
+    color: #DAFFFB;
+    padding: 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #DAFFFB;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gallery-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+h2{
+    text-align: center;
+    text-decoration: underline
+    color #f70bb0;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h3{
+    text-align: center;
+    text-decoration: underline
+    color #f70bb0;
+}
+iframe {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav {
+    color: #DAFFFB;
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DAFFFB;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: #f70bb0;
+    border: 1px solid #DAFFFB;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f70bb0;
+    min-width: 69px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.news-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-item {
+    background-color: #f1aad6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+}
+button{
+    background: #f05e5e;
+    color: #DAFFFB;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;   
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #8a2222;
+    cursor: pointer;
+}
+.news-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.news-content {
+    padding: 25px;
+}
+.news {
+    float: right;
+}
+.hidden {
+    display: none;
+}
+footer {
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>D' Uragon's Corner</h1>
+        </div>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile &#x25BE;</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+    <h2>Campus <span>Breaking News</span></h2>
+    <main class="container">
+        <div class="news-feed">
+            <div class="news-item">
+                 <img src="pic1news.jpg" alt="News 1 Image">
+                <div class="news-content">
+                    <h2> World Mental Health Month October 10, 2023</h2>
+                    <p> The Office of Guidance Counseling and Services leads the World Mental Health
+                     Celebration every 10th day of October. The theme for this year's celebration is 
+                     "Mental Health is a Universal Right", as presupposed by the World Foundation of 
+                     Mental Health. The mental health campaign and awareness program are scheduled 
+                     from October 9 until 13, 2023, on all Ilocos Sur Polytechnic State College 
+                     (ISPSC) campuses. This day, October 10, 2023, the celebration of the program 
+                     takes place at the ISPSC Santa Maria Campus College Gymnasium. This program features
+                      the ever active resource speaker, Mrs. Princess D. Racca, RGC - Head of Guidance 
+                      Counseling and Services. With the participation of the College of Computing 
+                      Studies (CCS) student leaders, classroom officers, and the officers of the 
+                      Computing Society of the Philippines (CSP) of Ilocos Sur Polytechnic 
+                      State College, Santa Maria Campus, they actively participate in 
+                      spreading awareness about mental health and making a positive
+                       change towards mental health.</p>
+                <button onclick="toggleContent(1)">Read More 1</button>
+                       <div id="content1" class="content">
+                           This is the content for button 1.
+                       </div>
+                 </div>
+            </div>
+            <div class="news-item">
+              <img src="pic2news.jpg" alt="News 2 Image">
+                <div class="news-content">
+                    <h2>Teacher's Day Celebration OCTOBER 5-6, 2023</h2>
+                    <p>From cultural shows to team-building exercises and sporting activities, 
+                        WE  HAVE IT ALL. The teachers' day celebration of the College of 
+                        Computing Studies (CCS) in Sta. Maria Campus, with the theme 
+                        "Celebrating the Day of the Backbones of All Professions," 
+                        is a challenging yet successful day of showing the love, gratitude, and 
+                        support of the students, staff, and teachers for the event. With the 
+                        inspirational thoughts from the ISPSC Sta. Maria College Administrator: 
+                        Dr. Francisco N. Divina and the participation of the teachers of the CCS, 
+                        the program was successfully delivered, and the teachers were pleased to 
+                        enjoy the event. Once again, happy Teacher's Day to all the faculty members and 
+                        staff of the CCS department. This event may not have been possible without 
+                        the hard work and efforts of the newly elected, hardworking, and very 
+                        active Computing Society of the Philippines (CSP) officers, headed by 
+                        the CSP President, Hillary Buis, together with their adviser, Mrs. Cherry 
+                        Lynn Navato.</p>
+                    <br>
+                    <button onclick="toggleContent(2)">Read More 2</button>
+                        <div id="content2" class="content">
+                              This is the content for button 2.
+                        </div>
+                    </div>
+            </div>
+            <div class="news-item">
+              <img src="pic3news.jpg" alt="News 3 Image">
+                <div class="news-content">
+                    <h2>TECHNOCRATS SHINE WITH POETIC BRILLIANCE - October 6, 2023</h2>
+                    <p> ISPSC Santa Maria Campus - Two technocrats delivered their evocative words, which 
+                        resonated with the judges and audience alike for the Spoken Poetry competition 
+                        during the Teachers' Day Celebration on October 6 at the College Gymnasium.
+                        Ms. Arden Liwan, BSIT 4B, emerged as the champion whose performance was a masterful
+                         display of emotion and expression.</p>
+                       <br><br>
+                       <button onclick="toggleContent(3)">Read More 3</button>
+                       <div id="content3" class="content">
+                           This is the content for button 3.
+                       </div>
+                       <script>
+                        function toggleContent(buttonNumber) {
+                            var content = document.getElementById("content" + buttonNumber);
+                
+                            if (content.style.display === "none") {
+                                content.style.display = "block";
+                            } else {
+                                content.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </div>
+            </div>
+        </div>
+    </main>
+ <footer>
+        <p>All rights reserved @2023</p>
+    </footer>
+</body>
+
+</html>
